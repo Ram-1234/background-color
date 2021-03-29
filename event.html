@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+        margin-left: 43%;
+        margin-top: 20%;
+        text-transform: uppercase;
+      }
+      p{
+        margin-top: 23%;
+        margin-left: 46%;
+      }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello JavaScript World!</h1> -->
+    <!-- <button>press me!!</button><br> -->
+    <!-- <button>Change color</button> -->
+    <!-- <p>Press😄Me!</p> -->
+
+    <h1>Press😄Me!</h1>
+    <p>@ramnayan1096</p>
+
+    <!-- <img src="bg1.jpg" alt="this is image"> -->
+<!-- <lable>select weather type today:</lable>
+<select><option>--wether--</option>
+    <option value="sunny">Sunny</option>
+    <option value="rainy">Rainy</option>
+    <option value="snowing">Snowing</option>
+    <option value="overcast">Overcast</option>
+</select> -->
+
+<p></p>
+    <script>
+      //Image change
+       // document.querySelector("html").onclick=function() {
+           // alert("Hello This Is Event");
+
+    //        let myImage=document.querySelector("img");
+    //        myImage.onclick=function (){
+    //            let mysrc=myImage.getAttribute("src");
+    //            if(mysrc==="bg1.jpg"){
+    //                myImage.setAttribute("src","bg2.jpg");
+    //            }else{
+    //                myImage.setAttribute("src","bg1.jpg");
+    //            }
+    //        }
+    //Image chnage
+
+//INPUT VALUE PRINT
+    //    var btn=document.querySelector("button");
+    //    btn.onclick=function(){
+    //        var name=prompt("Please Enter Your Name!");
+    //        alert("Hello "+name+" Nice to Meet You!");
+    //    } 
+//INPUT VALUE PRINT
+    
+    //Navigation
+// const select = document.querySelector('select');
+// const para = document.querySelector('p');
+
+// select.addEventListener('change', setWeather);
+
+// function setWeather() {
+//   const choice = select.value;
+
+//   if (choice === 'sunny') {
+//     para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+//   } else if (choice === 'rainy') {
+//     para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+//   } else if (choice === 'snowing') {
+//     para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+//   } else if (choice === 'overcast') {
+//     para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+//   } else {
+//     para.textContent = '';
+//   }
+// }
+//Navigation
+
+// const para =document.querySelector('p');
+
+// para.addEventListener("click",UpadteName);
+
+// function UpadteName(){
+//   let name=prompt("Enter Name : ");
+//   para.textContent="My Name Is : "+name;
+// }
+//COLOR
+
+var value =document.querySelector("h1");
+// var btn = document.querySelector('p');
+value.addEventListener("click", interName);
+
+function interName(){
+  let name =prompt("Enter Your Name.");
+  value.innerHTML="Hii "+name+"👍";
+}
+
+const btn = document.querySelector('html');
+function random(number) {
+  return Math.floor(Math.random() * (number+1));
+}
+
+btn.onclick = function() {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  const colors = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+  document.body.style.color = colors;
+
+}
+//COLOR
+
+    </script>
+    <!-- <button>Change color</button> -->
+   
+</body>
+</html>
